@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Supra MK4 — Showcase</title>
+
+  <!-- Tailwind CDN (quick start) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: load a nice font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Your small custom styles -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="bg-[#0d0d0d] text-white font-poppins antialiased">
+
+  <!-- NAVBAR -->
+  <header class="px-8 py-6 flex items-center justify-between">
+    <div class="text-xl font-semibold">Kris•Supra</div>
+    <nav class="hidden md:flex gap-6 text-gray-300">
+      <a href="#highlights" class="hover:text-white">Highlights</a>
+      <a href="#gallery" class="hover:text-white">Gallery</a>
+      <a href="#specs" class="hover:text-white">Specs</a>
+    </nav>
+    <div class="md:hidden">☰</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="min-h-[78vh] px-8 flex items-center gap-8">
+    <!-- Left: text -->
+    <div class="max-w-xl">
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight">Toyota Supra MK4</h1>
+      <p class="mt-4 text-gray-400 max-w-md">
+        The JDM icon — timeless silhouette, legendary 2JZ heart, endless tuning potential.
+      </p>
+
+      <div class="mt-8 flex gap-4">
+        <a href="#specs" class="inline-block border border-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition">Explore Specs</a>
+        <a href="#gallery" class="inline-block text-sm py-2 px-4 text-gray-300 border border-transparent hover:underline">View Gallery</a>
+      </div>
+    </div>
+
+    <!-- Right: image -->
+    <div class="flex-1 hidden md:block">
+      <img src="./assets/supra.jpg" alt="Supra MK4" class="w-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] -translate-y-6">
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section id="highlights" class="px-8 py-16">
+    <h2 class="text-3xl font-semibold mb-8">Highlights</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-6 border border-white/6 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">2JZ-GTE Engine</h3>
+        <p class="text-gray-400">Legendary robust inline-6, extremely tunable and reliable under boost.</p>
+      </div>
+
+      <div class="p-6 border border-white/6 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Timeless JDM Design</h3>
+        <p class="text-gray-400">Classic curves and proportions that still turn heads.</p>
+      </div>
+
+      <div class="p-6 border border-white/6 rounded-lg">
+        <h3 class="text-xl font-bold mb-2">Turbo Potential</h3>
+        <p class="text-gray-400">From mild street power to serious track setups — huge upgrade headroom.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="px-8 py-16 bg-gradient-to-b from-transparent to-[rgba(255,255,255,0.02)]">
+    <h2 class="text-3xl font-semibold mb-8">Gallery</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="rounded-lg overflow-hidden">
+        <img src="./assets/supra.jpg" alt="Supra angle 1" class="w-full h-64 object-cover">
+      </div>
+      <div class="rounded-lg overflow-hidden">
+        <img src="./assets/supra.jpg" alt="Supra angle 2" class="w-full h-64 object-cover">
+      </div>
+      <div class="rounded-lg overflow-hidden">
+        <img src="./assets/supra.jpg" alt="Supra angle 3" class="w-full h-64 object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS (glass-like cards) -->
+  <section id="specs" class="px-8 py-20">
+    <h2 class="text-3xl font-semibold mb-8">Specifications</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <!-- Horsepower -->
+      <div class="glass-card p-6 rounded-xl">
+        <div class="text-sm text-gray-300">Horsepower</div>
+        <div class="mt-2 text-2xl font-bold">~320 hp</div>
+      </div>
+
+      <!-- Top Speed -->
+      <div class="glass-card p-6 rounded-xl">
+        <div class="text-sm text-gray-300">Top Speed</div>
+        <div class="mt-2 text-2xl font-bold">~250 km/h</div>
+      </div>
+
+      <!-- Engine Type -->
+      <div class="glass-card p-6 rounded-xl">
+        <div class="text-sm text-gray-300">Engine</div>
+        <div class="mt-2 text-2xl font-bold">2JZ-GTE</div>
+      </div>
+
+      <!-- Turbo Setup -->
+      <div class="glass-card p-6 rounded-xl">
+        <div class="text-sm text-gray-300">Turbo Setup</div>
+        <div class="mt-2 text-2xl font-bold">Twin Turbo</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="px-8 py-10 border-t border-white/6 text-gray-400">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>© 2025 Supra MK4 Showcase — by Kris</div>
+      <div class="text-sm">Built with Tailwind • Minimal & Dark</div>
+    </div>
+  </footer>
+
+</body>
+</html>
